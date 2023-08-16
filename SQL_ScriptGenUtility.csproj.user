@@ -10,7 +10,10 @@
     <Compile Update="Forms\DQL_Forms\DQL_ScriptGen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ScriptGenUtility.cs">
+    <Compile Update="Forms\SQL_ScriptGenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SQL_ScriptGen.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
