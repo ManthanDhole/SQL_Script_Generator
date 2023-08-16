@@ -41,6 +41,7 @@
             this.btn_DQL.TabIndex = 5;
             this.btn_DQL.Text = "DQL";
             this.btn_DQL.UseVisualStyleBackColor = true;
+            this.btn_DQL.Click += new System.EventHandler(this.btn_DQL_Click);
             // 
             // btn_DML
             // 
@@ -50,6 +51,7 @@
             this.btn_DML.TabIndex = 4;
             this.btn_DML.Text = "DML";
             this.btn_DML.UseVisualStyleBackColor = true;
+            this.btn_DML.Click += new System.EventHandler(this.btn_DML_Click);
             // 
             // btn_DDL
             // 
@@ -59,6 +61,7 @@
             this.btn_DDL.TabIndex = 3;
             this.btn_DDL.Text = "DDL";
             this.btn_DDL.UseVisualStyleBackColor = true;
+            this.btn_DDL.Click += new System.EventHandler(this.btn_DDL_Click);
             // 
             // SQL_ScriptGenForm
             // 

@@ -13,8 +13,5 @@
     <Compile Update="Forms\SQL_ScriptGenForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="SQL_ScriptGen.cs">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
 </Project>
