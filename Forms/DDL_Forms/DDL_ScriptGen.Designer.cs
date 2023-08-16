@@ -36,6 +36,8 @@
             this.rb_Alter = new System.Windows.Forms.RadioButton();
             this.rb_Drop = new System.Windows.Forms.RadioButton();
             this.btn_View = new System.Windows.Forms.Button();
+            this.grp_DDL = new System.Windows.Forms.GroupBox();
+            this.grp_DDL.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Database
@@ -46,6 +48,7 @@
             this.btn_Database.TabIndex = 0;
             this.btn_Database.Text = "Database";
             this.btn_Database.UseVisualStyleBackColor = true;
+            this.btn_Database.Click += new System.EventHandler(this.btn_Database_Click);
             // 
             // btn_Table
             // 
@@ -75,7 +78,7 @@
             // rb_Create
             // 
             this.rb_Create.AutoSize = true;
-            this.rb_Create.Location = new System.Drawing.Point(239, 35);
+            this.rb_Create.Location = new System.Drawing.Point(23, 26);
             this.rb_Create.Name = "rb_Create";
             this.rb_Create.Size = new System.Drawing.Size(59, 19);
             this.rb_Create.TabIndex = 4;
@@ -86,7 +89,7 @@
             // rb_Alter
             // 
             this.rb_Alter.AutoSize = true;
-            this.rb_Alter.Location = new System.Drawing.Point(335, 35);
+            this.rb_Alter.Location = new System.Drawing.Point(119, 26);
             this.rb_Alter.Name = "rb_Alter";
             this.rb_Alter.Size = new System.Drawing.Size(50, 19);
             this.rb_Alter.TabIndex = 5;
@@ -97,7 +100,7 @@
             // rb_Drop
             // 
             this.rb_Drop.AutoSize = true;
-            this.rb_Drop.Location = new System.Drawing.Point(425, 35);
+            this.rb_Drop.Location = new System.Drawing.Point(209, 26);
             this.rb_Drop.Name = "rb_Drop";
             this.rb_Drop.Size = new System.Drawing.Size(51, 19);
             this.rb_Drop.TabIndex = 6;
@@ -114,15 +117,25 @@
             this.btn_View.Text = "View";
             this.btn_View.UseVisualStyleBackColor = true;
             // 
+            // grp_DDL
+            // 
+            this.grp_DDL.Controls.Add(this.rb_Drop);
+            this.grp_DDL.Controls.Add(this.rb_Create);
+            this.grp_DDL.Controls.Add(this.rb_Alter);
+            this.grp_DDL.Location = new System.Drawing.Point(219, 12);
+            this.grp_DDL.Name = "grp_DDL";
+            this.grp_DDL.Size = new System.Drawing.Size(304, 63);
+            this.grp_DDL.TabIndex = 8;
+            this.grp_DDL.TabStop = false;
+            this.grp_DDL.Text = "Select what to do?";
+            // 
             // DDL_ScriptGen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(742, 450);
+            this.Controls.Add(this.grp_DDL);
             this.Controls.Add(this.btn_View);
-            this.Controls.Add(this.rb_Drop);
-            this.Controls.Add(this.rb_Alter);
-            this.Controls.Add(this.rb_Create);
             this.Controls.Add(this.ddl_panel_container);
             this.Controls.Add(this.btn_StoredProcedure);
             this.Controls.Add(this.btn_Table);
@@ -130,8 +143,9 @@
             this.Name = "DDL_ScriptGen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Data Definition Script Generator";
+            this.grp_DDL.ResumeLayout(false);
+            this.grp_DDL.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -145,5 +159,6 @@
         private RadioButton rb_Alter;
         private RadioButton rb_Drop;
         private Button btn_View;
+        private GroupBox grp_DDL;
     }
 }

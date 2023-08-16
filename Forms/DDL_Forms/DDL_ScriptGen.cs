@@ -16,5 +16,31 @@ namespace SQL_ScriptGenUtility.Forms.DDL_Forms
         {
             InitializeComponent();
         }
+
+        private void btn_Database_Click(object sender, EventArgs e)
+        {
+            string action = string.Empty;
+
+            if (rb_Create.Checked)
+                action = "Create";
+            else if (rb_Alter.Checked)
+                action = "Alter";
+            else if (rb_Drop.Checked)
+                action = "Drop";
+            else
+                action = "Select an action to perform";
+
+            switch (action)
+            {
+                case "Create":
+                    break;
+                case "Alter":
+                    break;
+                case "Drop":
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
