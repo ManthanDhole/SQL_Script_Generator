@@ -68,6 +68,7 @@
             this.Controls.Add(this.btn_CreateDB);
             this.Name = "CreateDatabase";
             this.Text = "Create Database Script";
+            this.Load += new System.EventHandler(this.CreateDatabase_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

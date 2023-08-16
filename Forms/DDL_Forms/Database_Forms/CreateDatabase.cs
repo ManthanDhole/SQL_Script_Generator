@@ -16,5 +16,10 @@ namespace SQL_ScriptGenUtility.Forms.DDL_Forms.Database_Forms
         {
             InitializeComponent();
         }
+
+        private void CreateDatabase_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

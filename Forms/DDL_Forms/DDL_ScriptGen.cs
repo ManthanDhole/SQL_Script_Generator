@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SQL_ScriptGenUtility.CommonHelperCode;
+using SQL_ScriptGenUtility.Forms.DDL_Forms.Database_Forms;
 
 namespace SQL_ScriptGenUtility.Forms.DDL_Forms
 {
@@ -28,11 +30,20 @@ namespace SQL_ScriptGenUtility.Forms.DDL_Forms
             else if (rb_Drop.Checked)
                 action = "Drop";
             else
-                action = "Select an action to perform";
+                MessageBox.Show("Select an action to perform from the radio buttons above.", "No Radio Button selected", MessageBoxButtons.OK);
+
+            //Clear the panel component controls
+            OpenComponent_inPanel.ClearControlsFromPanel(ddl_panel_container);
 
             switch (action)
             {
                 case "Create":
+                    CreateDatabase creatDb = new CreateDatabase();
+                    creatDb.TopLevel = false;
+                    ddl_panel_container.Controls.Add(creatDb);
+                    creatDb.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                    creatDb.Dock = DockStyle.Fill;
+                    creatDb.Show();
                     break;
                 case "Alter":
                     break;
