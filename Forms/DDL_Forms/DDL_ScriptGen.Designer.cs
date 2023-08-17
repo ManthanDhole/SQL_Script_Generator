@@ -58,6 +58,7 @@
             this.btn_Table.TabIndex = 1;
             this.btn_Table.Text = "Table";
             this.btn_Table.UseVisualStyleBackColor = true;
+            this.btn_Table.Click += new System.EventHandler(this.btn_Table_Click);
             // 
             // btn_StoredProcedure
             // 

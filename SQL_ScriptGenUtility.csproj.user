@@ -7,6 +7,9 @@
     <Compile Update="Forms\DDL_Forms\DDL_ScriptGen.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\DDL_Forms\Table_Forms\CreateTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\DML_Forms\DML_ScriptGen.cs">
       <SubType>Form</SubType>
     </Compile>
