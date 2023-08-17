@@ -1,0 +1,4 @@
+#Add folder or file names which are to be excluded while adding/commiting to the repository
+bin/
+obj/
+/.vs/
